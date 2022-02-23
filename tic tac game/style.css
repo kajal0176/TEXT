@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(138, 169, 228);
+}
+nav{
+    background-color: rgb(199, 13, 106);
+    color: white;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-family: 'Rubik Beastly', cursive;
+}
+nav ul{
+    list-style: none;
+}
+.gamecontainer{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   align-items: center;
+}
+.container{
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);  
+  font-family: 'Roboto', sans-serif ;
+  position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.box:hover{
+    background-color: rgb(221, 142, 142);
+}
+.info{
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bolder;
+}
+.gameinfo{
+    padding: 34px;
+    
+}
+.gameinfo h1{
+    font-size: 1.5rem;
+}
+.imgbox img{
+   width: 0;
+   transition: width 1s ease-in-out;
+   
+}
+.line{
+    background-color: black;
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+}
+.br-0{
+ border-right: 0px;
+}
+.bl-0{
+border-left: 0px;
+}
+.bt-0{
+border-top: 0px;
+}
+.bb-0{
+border-bottom: 0px;
+}
+#reset{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+@media screen and (max-width:800px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+}
